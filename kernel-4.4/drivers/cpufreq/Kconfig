@@ -261,6 +261,12 @@ config CPU_FREQ_GOV_SMARTASS2
  help
  'smartassV2' - a "smart" optimized governor!
 
+config CPU_FREQ_DEFAULT_GOV_SMARTASS2
+ bool "smartass2"
+ select CPU_FREQ_GOV_SMARTASS2
+ help
+ Use the CPUFreq governor 'smartassV2' as default.
+
 comment "CPU frequency scaling drivers"
 
 config CPUFREQ_DT
